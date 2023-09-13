@@ -55,7 +55,7 @@ The Spring application should now be up and running.
 ## Usage
 
 - Access the Spring application API at `http://localhost:8080`.
-- Use tools like `curl`, [Postman](https://www.postman.com/), or [Swagger](https://swagger.io/) to interact with the API endpoints.
+- Use tools like `curl` or [Postman](https://www.postman.com/) to interact with the API endpoints.
 
 ## Project Structure
 
@@ -66,14 +66,15 @@ The project follows a standard Spring Boot project structure:
 │   ├── main
 │   │   ├── java
 │   │   │   ├── com.nathan.sat
-│   │   │   │   ├── controller  
-│   │   │   │   ├── model  
-│   │   │   │   ├── repository  
-│   │   │   │   ├── service  
-│   │   │   │   ├── util  
+│   │   │   │   ├── controller
+│   │   │   │   ├── model
+│   │   │   │   ├── repository
+│   │   │   │   ├── service
+│   │   │   │   ├── util
 │   │   ├── resources
 │   ├── test
 │   │   ├── java
 │   │   │   ├── com.nathan.sat
-│   │   │   │   ├── controller  
+│   │   │   │   ├── controller
 │   │   ├── resources
+```
