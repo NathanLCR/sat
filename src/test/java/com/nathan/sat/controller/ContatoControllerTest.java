@@ -4,20 +4,16 @@ import com.nathan.sat.SatApplication;
 import com.nathan.sat.model.Contato;
 import com.nathan.sat.repository.ContatoRepository;
 import com.nathan.sat.service.dto.ContatoDTO;
-import com.nathan.sat.service.mapper.ContatoMapper;
 import com.nathan.sat.util.ConstantsUtil;
 import jakarta.transaction.Transactional;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -27,7 +23,6 @@ import org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper;
 @RunWith(SpringRunner.class)
 @Transactional
 @SpringBootTest(classes = SatApplication.class)
-@ExtendWith(SpringExtension.class)
 @AutoConfigureMockMvc
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class ContatoControllerTest {
@@ -37,9 +32,6 @@ public class ContatoControllerTest {
 
     @Autowired
     private ContatoRepository contatoRepository;
-
-    @Autowired
-    private ContatoMapper contatoMapper;
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 

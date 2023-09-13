@@ -17,7 +17,7 @@ public class ContatoController {
 
     private final ContatoService contatoService;
 
-    @GetMapping("")
+    @GetMapping
     private ResponseEntity<Page<ContatoDTO>> search(@RequestParam(value = "size", defaultValue = "10", required = false) int size,
                                                      @RequestParam(value = "page", defaultValue = "0", required = false) int page,
                                                      @RequestParam(value = "sort", defaultValue = "1", required = false) int sortOrder,
